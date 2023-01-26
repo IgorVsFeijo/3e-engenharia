@@ -40,6 +40,10 @@ a{
     background-color: #00000036;
 }
 
+footer.top-bar, .nav-secundaria{
+    display: none;
+} 
+
 .top-bar img{
     width: 26px;
     padding: 3px;
@@ -110,6 +114,10 @@ header img{
     width: 100px;
 }
 
+.small-screens{
+    display: none;
+}
+
 /* Barra de Navegação */
 
 nav{
@@ -178,6 +186,7 @@ nav a:hover{
 .flyer{
     width: 30%;
     margin: 20px;
+    overflow: visible;
 }
 
 .flyer img{
@@ -209,6 +218,11 @@ nav a:hover{
         height: 100%;
         justify-content: center;
     }
+
+    .face{
+        height: 70vh;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -218,7 +232,7 @@ nav a:hover{
     }
 
     header{
-        margin: 10px 0px;
+        margin-bottom: 40px;
     }
 
     header img{
@@ -227,6 +241,42 @@ nav a:hover{
 
     nav{
         display: none;
+    }
+
+    .nav-secundaria{
+
+    }
+
+    div.top-bar{
+        display: none;
+    }
+
+    footer.top-bar{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        transform: translateY(-100%);
+    }
+
+    .small-screens{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .small-screens h1{
+        width: 100%;
+        height: min-content;
+        font-size: 2.3em;
+        text-shadow: 0.5px 0.5px 5px #8C7F3F;
+    }
+
+    .small-screens img{
+        padding: 10px;
+        box-sizing: border-box;
     }
 
     .face{
