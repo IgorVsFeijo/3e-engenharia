@@ -40,7 +40,7 @@ a{
     background-color: #00000036;
 }
 
-footer.top-bar, .nav-secundaria{
+footer.top-bar, #navs{
     display: none;
 } 
 
@@ -126,7 +126,21 @@ nav{
     border-bottom: 1px solid black;    
 }
 
-nav ul{
+menu{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: -35px;
+}
+
+menu li{
+    background-color: rgba(0, 0, 0, 0.355);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 3px;
+}
+
+nav ul, menu ul{
     list-style-type: none;
     display: flex;
     height: 100%;
@@ -134,7 +148,11 @@ nav ul{
     align-items: center;
 }
 
-nav a{
+menu ul{
+    flex-direction: column;
+}
+
+nav a, menu a{
     text-transform: uppercase;
     font-size: 1.3em;
     font-weight: bolder;
@@ -142,10 +160,19 @@ nav a{
     transform: scale(1);
 }
 
-nav a:hover{
+nav a:hover, menu a:hover{
     font-size: 1.35em;
     transition: 0.5s;
     border-bottom: 2px solid yellow;
+    animation-duration: 0.5s;
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+}
+
+menu li:hover{
+    background-color: black;
+    transition: 0.5s;
+    border: 2px solid yellow;
     animation-duration: 0.5s;
     color: yellow;
     text-shadow: 1px 1px 1px black;
@@ -243,10 +270,6 @@ nav a:hover{
         display: none;
     }
 
-    .nav-secundaria{
-
-    }
-
     div.top-bar{
         display: none;
     }
@@ -271,7 +294,6 @@ nav a:hover{
         width: 100%;
         height: min-content;
         font-size: 2.3em;
-        text-shadow: 0.5px 0.5px 5px #8C7F3F;
     }
 
     .small-screens img{

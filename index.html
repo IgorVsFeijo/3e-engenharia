@@ -47,13 +47,49 @@
 
         <div class="mw1000">
             <!--Cabeçalho-->
-            <header>
+            <div>
 
-                <!--Logo-->
-                <img src="assets/imgs/logo-3eengenharia-300.png" alt="Logo 3E Engenharia">
+                <header>
+                    <!--Logo-->
+                    <img src="assets/imgs/logo-3eengenharia-300.png" alt="Logo 3E Engenharia">
+                    <!--Barra de Navegação-->
+                    <nav>
+                        <ul>
+                            <li id="home">
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Quem Somos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Energia Solar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Serviços Executados
+                                </a>
+                            </li>
+                            <li id="contact">
+                                <a href="#">
+                                    Contato e Simulação
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--(Telas Menores)-->
+                    <div class="small-screens">
+                        <h1 class="title">3E ENGENHARIA</h1>
+                        <img src="assets/imgs/icon-menu.svg" alt="Icone Menu" onclick="clickMenu()">
+                    </div>
+                </header>
 
-                <!--Barra de Navegação-->
-                <nav>
+                <menu id="navs">
                     <ul>
                         <li id="home">
                             <a href="index.html">
@@ -81,44 +117,9 @@
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </menu>
 
-                <!--(Telas Menores)-->
-                <div class="small-screens">
-                    <h1 class="title">3E ENGENHARIA</h1>
-                </div>
-
-                <nav class="nav-secundaria">
-                    <ul>
-                        <li id="home">
-                            <a href="index.html">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Quem Somos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Energia Solar
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Serviços Executados
-                            </a>
-                        </li>
-                        <li id="contact">
-                            <a href="#">
-                                Contato e Simulação
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-            </header>
+            </div>
 
             <!--Introdução-->
            <div class="face">
@@ -165,5 +166,14 @@
             </div>
             </footer>
    </div>
+
+   <script>
+        function clickMenu(){
+            if(navs.style.display == 'block')
+                navs.style.display = 'none';
+            else
+                navs.style.display = 'block';
+        }
+   </script>
 </body>
 </html>
