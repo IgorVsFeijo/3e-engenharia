@@ -1,15 +1,106 @@
 .conteudo1{
-    height: 70vh;
     display: flex;
     align-items: center;
-    color: white;
-    font-size: 1.2em;
+    font-size: 1.0em;
+    flex-direction: column;
 }
 
 .artigos{
-    width: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     height: 100%;
+    margin: 12px;
+    gap: 5px;
+}
+
+.artigos article{
+    width: 33%;
+    background-color: white;
+    padding: 5px;
+}
+
+.artigos > article > .imagem{
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    padding: -20px;
+}
+
+.artigos #img1{
+    background-image: url(assets/imgs/fachada-3eengenharia.webp);
+}
+
+.artigos #img2{
+    background-image: url(assets/imgs/restaurante-meninus.jpg);
+}
+
+.artigos #img3{
+    background-image: url(assets/imgs/premio_elsys.webp);
+}
+
+.artigos .text{
+    padding: 10px;
+}
+
+/*   //////////// Experiencia Profissional //////// */
+
+.eduardo{
+    background-color: white;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.exp-prof{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.eduardo .text{
+    width: 40%;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.eduardo .text *{
+    margin-bottom: 20px;
+}
+
+.eduardo .img{
+    width: 60%;
+    height: max-content;
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 10px;
+}
+
+
+.eduardo .img img{
+    width: 45%;
+
+}
+
+
+
+/*  ////////////// Media Queries ////////////// */
+
+@media screen and (max-width: 500px) {
+
+    main{
+        margin-bottom: 50px;
+    }
+
+    .artigos{
+        flex-direction: column;
+        align-items:center ;
+        margin-top: 0px;
+    }
+
+    .artigos article{
+        width: 100%;
+    }
 }

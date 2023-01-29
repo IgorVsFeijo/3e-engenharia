@@ -30,7 +30,8 @@ a{
     background-image: url(assets/imgs/poster-front-cover.jpg);
     background-size: cover;
     background-position: bottom;
-    overflow: hidden;
+    background-attachment: fixed;
+    overflow: auto;
 }
 
 /*       //////////////////////////// Top Bar //////////////////////////////// */
