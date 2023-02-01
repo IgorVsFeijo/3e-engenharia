@@ -22,6 +22,10 @@ a{
     margin: auto;
 }
 
+.border-yellow{
+    border-bottom: 1px solid yellow;
+}
+
 /*          ////////              Pagina de Rosto             /////           */
 
 .front-cover{
