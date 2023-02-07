@@ -15,8 +15,10 @@ let backup = rightSide.innerHTML
 
 let a = '<a href="https://goo.gl/maps/2m59dw9WSFD6tpeD8">     <img src="../../assets/imgs/maps-pin-black-icon.svg" id="pin" alt="Icon Endereço"></img></a>'
 
-mediaQueries()
-showMenu()
+window.addEventListener('load', ()=>{
+    mediaQueries()
+    showMenu()
+})
 
 function mediaQueries(){
         
