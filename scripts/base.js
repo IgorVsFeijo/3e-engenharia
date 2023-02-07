@@ -67,7 +67,9 @@ function mediaQueries(){
 function showMenu(){
     console.log(menu.classList[0])
 
+
     if(menu.classList[0] == 'flex' && menu.parentElement != header){
+        console.log('teste')
         menu.classList.remove('flex')
     }
     else{
