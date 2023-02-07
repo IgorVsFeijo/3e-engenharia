@@ -1,5 +1,6 @@
 .section1{
-
+    padding-top: 10px;
+    margin-bottom: 50px;
 }
 
 .art1{
@@ -30,6 +31,112 @@
     height: min-content;
 }
 
+.subart1{
+    gap: 5px;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-right: 20px;
+    align-items:first baseline;
+    justify-content: stretch;
+}
+
+.subart1 picture{
+    flex-grow: 1;
+    background-color: white;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.subart1 img{
+    width: 70%;
+    height: min-content;
+}
+
+/* SECTION 2 */
+.secb{
+    background-color: white;
+    flex-direction:column;
+    padding: 10px;
+}
+
+.healine{
+    font-size: 1.4em;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url(../assets/imgs/placas-solares-e-um-trabalhador.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-bottom: 1px solid black;
+}
+
+.healine h2{
+    font-size: 1.7em;
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+.healine a{
+    border-radius: 5px;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    background-color: #29D967;
+    padding: 5px;
+    flex-shrink: 0;
+}
+
+.healine img{
+    width: 40px;
+    margin-right: 5px;
+}
+
+.content{
+    color: black;
+    padding: 10px;
+    gap: 10px;
+    font-size: 1.1em;
+}
+
+.content article{
+    background-color: rgba(255, 255, 0, 0.048);
+}
+
+.content a{
+    color: black;
+}
+
+.content a:hover{
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 1px solid yellow;
+}
+
+.content h3{
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.content li{
+    list-style: square;
+    list-style-position: inside;
+    line-height: 20pt;
+}
+
+.secb article{
+    flex-direction: column;
+    width: 50%;
+    padding: 30px;
+}
+
+
+
+
 @media screen and (max-width: 530px){
     .section1{
         flex-direction: column;
@@ -46,6 +153,12 @@
 
     .art2{
         padding: 10px;
+    }
+
+    .subart1{
+        align-items: center;
+        justify-content: center;
+        padding-right: 0px;
     }
 
 

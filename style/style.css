@@ -6,7 +6,7 @@
 
 body{
     height: 100vh;
-    background-image: url(../assets/imgs/poster-front-cover.jpg);
+    background-image: url(../assets/imgs/poster-front-cover.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -109,7 +109,7 @@ menu{
     display: flex;
 }
 
-ul{
+menu ul{
     text-transform: uppercase;
     font-weight: bold;
     justify-content: space-between;
@@ -190,7 +190,7 @@ menu a:hover{
         flex-grow: 1;
     }
 
-    ul{
+    menu ul{
         flex-direction: column;
         justify-content: flex-start;
         align-items: stretch;
@@ -198,7 +198,7 @@ menu a:hover{
         padding: 0px 20px;
     }
 
-    li{
+    menu li{
         padding: 8px;
         background-color: rgba(0, 0, 0, 0.445);
     }
@@ -247,7 +247,7 @@ menu a:hover{
         width: 60px;
     }
 
-    header, ul{
+    header, menu ul{
         margin: 0px;
         margin-bottom: 5px;
         padding: 0;
