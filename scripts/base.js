@@ -13,7 +13,7 @@ let end = document.getElementById("map")
 let rightSide  = document.getElementsByClassName('right')[0]
 let backup = rightSide.innerHTML
 
-let a = '<a href="https://goo.gl/maps/2m59dw9WSFD6tpeD8">     <img src="../../assets/imgs/maps-pin-black-icon.svg" id="pin" alt="Icon Endereço"></img></a>'
+let a = '<a target="_blank" href="https://goo.gl/maps/2m59dw9WSFD6tpeD8">     <img src="../../assets/imgs/maps-pin-black-icon.svg" id="pin" alt="Icon Endereço"></img></a>'
 
 window.addEventListener('load', ()=>{
     mediaQueries()
