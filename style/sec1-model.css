@@ -1,0 +1,52 @@
+.section1{
+
+}
+
+.art1{
+    width: 70%;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.art1 h1{
+    font-size: 3.2em;
+    margin-bottom: 5px;
+}
+
+.art1 p{
+    font-size: 1.2em;
+    backdrop-filter: blur(10px);
+    padding: 10px 2px;
+}
+
+.art2{
+    width: 30%;
+    align-items: center;
+}
+
+.art2 img{
+    width: 100%;
+    height: min-content;
+}
+
+@media screen and (max-width: 530px){
+    .section1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1 article{
+        width: 100%;
+    }
+
+    .art1 h1{
+        text-align: center;
+    }
+
+    .art2{
+        padding: 10px;
+    }
+
+
+}
