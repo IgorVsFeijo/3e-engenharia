@@ -1,7 +1,7 @@
 //Top-bar
 
 //Menu Hamburguer
-let menu = document.getElementsByTagName('menu')[0]
+let menu = document.querySelector('menu.flex')
 let header = document.getElementsByTagName('header')[0]
 let main = document.getElementsByTagName('main')[0]
 let topbar = document.getElementsByClassName('top-bar')[0]
@@ -17,7 +17,6 @@ let a = '<a href="https://goo.gl/maps/2m59dw9WSFD6tpeD8">     <img src="../../as
 
 window.addEventListener('load', ()=>{
     mediaQueries()
-    showMenu()
 })
 
 function mediaQueries(){
@@ -56,6 +55,7 @@ function mediaQueries(){
 
     if(document.body.clientWidth < 450){
         document.body.appendChild(topbar)
+        topbar.style.display = 'flex'
     }
 
     else{
@@ -75,7 +75,7 @@ function showMenu(){
     else{
         menu.classList.add('flex')
     }
-    
+
 }
 
 document.body.onresize = mediaQueries
